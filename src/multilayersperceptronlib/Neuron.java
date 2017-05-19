@@ -16,8 +16,14 @@
  */
 package multilayersperceptronlib;
 
-public class Neuron 
+import java.io.Serializable;
+
+public class Neuron implements Serializable 
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3143614544400573300L;
 	public double		Value;
 	public double[]		Weights;
 	public double		Bias;

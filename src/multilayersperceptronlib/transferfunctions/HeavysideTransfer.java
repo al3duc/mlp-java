@@ -16,10 +16,17 @@
  */
 package multilayersperceptronlib.transferfunctions;
 
+import java.io.Serializable;
+
 import multilayersperceptronlib.TransferFunction;
 
-public class HeavysideTransfer implements TransferFunction 
+public class HeavysideTransfer implements TransferFunction, Serializable 
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7390281926760902571L;
+
 	@Override
 	public double evalute(double value) 
 	{

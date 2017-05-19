@@ -16,8 +16,14 @@
  */
 package multilayersperceptronlib;
 
-public class Layer 
+import java.io.Serializable;
+
+public class Layer implements Serializable  
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8013778826394054373L;
 	public Neuron 	Neurons[];
 	public int 		Length;
 	

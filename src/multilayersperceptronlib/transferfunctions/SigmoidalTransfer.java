@@ -16,10 +16,17 @@
  */
 package multilayersperceptronlib.transferfunctions;
 
+import java.io.Serializable;
+
 import multilayersperceptronlib.TransferFunction;
 
-public class SigmoidalTransfer implements TransferFunction 
+public class SigmoidalTransfer implements TransferFunction, Serializable 
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6977895047696919133L;
+
 	@Override
 	public double evalute(double value) 
 	{

@@ -20,9 +20,14 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
-public class MultiLayerPerceptron implements Cloneable
+public class MultiLayerPerceptron implements Cloneable, Serializable 
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8292016007021588493L;
 	protected double			fLearningRate = 0.6;
 	protected Layer[]			fLayers;
 	protected TransferFunction 	fTransferFunction;
@@ -244,6 +249,7 @@ public class MultiLayerPerceptron implements Cloneable
 		}
 		catch (Exception e) 
 		{ 
+			//e.printStackTrace();
 			return null;
 		}
 	}

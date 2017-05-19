@@ -16,10 +16,17 @@
  */
 package multilayersperceptronlib.transferfunctions;
 
+import java.io.Serializable;
+
 import multilayersperceptronlib.TransferFunction;
 
-public class HyperbolicTransfer implements TransferFunction 
+public class HyperbolicTransfer implements TransferFunction , Serializable
 {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1724433577060791227L;
 
 	@Override
 	public double evalute(double value) 
